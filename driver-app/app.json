@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Travo Driver",
+    "slug": "travo-driver",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1E3A5F"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.travo.driver",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Travo Driver needs your location to assign you nearby trips.",
+        "NSLocationAlwaysUsageDescription": "Travo Driver needs your location to share it with passengers."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1E3A5F"
+      },
+      "package": "com.travo.driver",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION"
+      ]
+    },
+    "plugins": ["expo-location"]
+  }
+}

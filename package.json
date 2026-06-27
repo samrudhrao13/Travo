@@ -1,0 +1,10 @@
+{
+  "name": "travo-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "passenger": "cd passenger-app && npx expo start",
+    "driver": "cd driver-app && npx expo start",
+    "admin": "cd admin-dashboard && npm run dev"
+  }
+}

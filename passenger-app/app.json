@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Travo",
+    "slug": "travo-passenger",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F97316"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.travo.passenger",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Travo needs your location to find nearby vehicles and track your ride.",
+        "NSLocationAlwaysUsageDescription": "Travo needs your location to track your ride in the background."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#F97316"
+      },
+      "package": "com.travo.passenger",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-location",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#F97316",
+          "image": "./assets/splash.png",
+          "resizeMode": "contain"
+        }
+      ]
+    ]
+  }
+}
